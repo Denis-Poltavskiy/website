@@ -1,0 +1,51 @@
+body{
+    background: #EFF6FF;
+}
+
+@font-face {
+    font-family: "Barlow-Light";
+    src: url(fonts/Barlow-Light.otf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+
+}
+h1{
+    font-family: "Barlow-Light", serif;
+    font-size: 20px;
+    color: #2A4A5C;
+}
+h2{
+    font-family: "Barlow-Light", serif;
+    font-size: 15px;
+    color: #808080;
+}
+
+
+.links{
+    margin-top: -1px;
+}
+.logo{
+    margin-top: -1000px;
+}
+.left{
+    position: absolute;
+    width : 44%;
+    height: 100%;
+    margin-left: 48%;
+    margin-top: -55px;
+    background: #FFFFFF;
+
+
+
+}
+.right{
+    position: absolute;
+
+    background: #FFFFFF;
+    width : 50%;
+    height: 1000px;
+    margin-left: 45%;
+}
+a{
+    margin-left: 20px;
+}
