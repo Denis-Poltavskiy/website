@@ -13,9 +13,10 @@ body{
 .services{
     border-top: 1px solid #D9FFF5;
     background-color: #F8F8F8;
+    height: 500px;
 }
 .services .services__heading::before{
-    content:" ";
+    content:"";
     margin-right: 10px;
     border-left-width: 3px;
     border-left-style: solid;
@@ -26,12 +27,14 @@ body{
 .services__slidemenu{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
     white-space: nowrap;
     flex-shrink:0;
     flex-wrap: nowrap;
+
     overflow-x:scroll;
+
 
 }
 .services__slidemenu li {
@@ -40,8 +43,14 @@ body{
     border-radius: 5px;
     margin-left: 16px;
 }
+.services__slidemenu li:first-child{
+    margin-left:-30px;
+}
+
+
 .services__slidemenu a {
     text-decoration: none;
+
 
 }
 .services__slidemenu a:hover {
