@@ -14,6 +14,22 @@ body{
     border-top: 1px solid #D9FFF5;
     background-color: #F8F8F8;
     height: 500px;
+body{
+    font-family: TT Lakes, serif;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+}
+.header__main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.services{
+    border-top: 1px solid #D9FFF5;
+    background-color: #F8F8F8;
+    height: 500px;
 }
 .services .services__heading::before{
     content:"";
@@ -57,3 +73,4 @@ body{
 
     background-color: #FFFFFFFF;
 }
+
