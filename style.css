@@ -31,6 +31,7 @@ img{
 }
 .services .services__heading{
     font-size: 5em;
+    margin-left: 2%;
 }
 .services__slidemenu{
     display: flex;
@@ -45,15 +46,15 @@ img{
 
 }
 .services__slidemenu li {
-    padding: 5%;
+    padding: 1.5% 4%;
     margin-left: 16px;
 
 }
 
 .services__slidemenu li:first-child{
-    margin-left:-25px;
+    margin-left: -1%;
     border: 0.4vh solid #B8FFEC;
-    border-radius: 5px;
+    border-radius: 1vh;
     background-color: #ffff;
 }
 .services__slidemenu a {
@@ -65,7 +66,7 @@ img{
 }
 .services__description{
     text-align: left;
-    padding-left:10px;
+    padding-left:4%;
     line-height: 129%;
     font-size: 3em;
 }
