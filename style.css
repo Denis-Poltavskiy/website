@@ -1,7 +1,7 @@
 body{
     font-family: TT Lakes, serif;
     font-size: 14px;
-    line-height: 129%;
+
     letter-spacing: 0.2px;
     color: #1B1C21;
 }
@@ -9,15 +9,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    min-height:250px;
 }
 img{
-    min-height: 2vh;
-    min-width: 2vm;
+    min-height: 7vh;
+
 }
 .services{
     border-top: 1px solid #D9FFF5;
     background-color: #F8F8F8;
-    height: 100%;
+    height: 1000px;
 }
 .services .services__heading::before{
     content:"";
@@ -28,26 +29,30 @@ img{
     border-top-right-radius: 1px;
     border-bottom-right-radius: 1px;
 }
+.services .services__heading{
+    font-size: 5em;
+}
 .services__slidemenu{
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
     white-space: nowrap;
+    font-size: 5em;
     flex-shrink:0;
     flex-wrap: nowrap;
     overflow-x:scroll;
 
 }
 .services__slidemenu li {
-    padding: 10px;
+    padding: 5%;
     margin-left: 16px;
 
 }
 
 .services__slidemenu li:first-child{
     margin-left:-25px;
-    border: 2px solid #B8FFEC;
+    border: 0.4vh solid #B8FFEC;
     border-radius: 5px;
     background-color: #ffff;
 }
@@ -61,10 +66,22 @@ img{
 .services__description{
     text-align: left;
     padding-left:10px;
+    line-height: 129%;
+    font-size: 3em;
 }
-.services__next::before{
-    content: url("services/image/expand.svg");
-    margin-left: 3%;
+
+.services__next{
+    display: flex;
+}
+.services__next h2{
+    font-size: 5em;
+
+}
+.services__next img{
+
+
+
+
 }
 .services__picture{
 
