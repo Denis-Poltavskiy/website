@@ -11,8 +11,8 @@ body{
     justify-content: space-around;
 }
 img{
-    min-height: 100px;
-    min-width: 100px;
+    min-height: 2vh;
+    min-width: 2vm;
 }
 .services{
     border-top: 1px solid #D9FFF5;
@@ -36,9 +36,7 @@ img{
     white-space: nowrap;
     flex-shrink:0;
     flex-wrap: nowrap;
-
     overflow-x:scroll;
-
 
 }
 .services__slidemenu li {
@@ -50,15 +48,19 @@ img{
 .services__slidemenu li:first-child{
     margin-left:-30px;
 }
-
-
 .services__slidemenu a {
     text-decoration: none;
-
-
-
 }
 .services__slidemenu a:hover {
 
     background-color: #FFFFFFFF;
+}
+.services__description{
+    text-align: left;
+    padding-left:10px;
+}
+.services__next::before{
+    content: url("services/image/expand.svg");
+    margin-left: 3%;
+
 }
