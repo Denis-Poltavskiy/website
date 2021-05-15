@@ -17,7 +17,7 @@ img{
 .services{
     border-top: 1px solid #D9FFF5;
     background-color: #F8F8F8;
-    height: 500px;
+    height: 100%;
 }
 .services .services__heading::before{
     content:"";
@@ -41,19 +41,22 @@ img{
 }
 .services__slidemenu li {
     padding: 10px;
+    margin-left: 16px;
+
+}
+
+.services__slidemenu li:first-child{
+    margin-left:-25px;
     border: 2px solid #B8FFEC;
     border-radius: 5px;
-    margin-left: 16px;
-}
-.services__slidemenu li:first-child{
-    margin-left:-30px;
+    background-color: #ffff;
 }
 .services__slidemenu a {
     text-decoration: none;
 }
+
 .services__slidemenu a:hover {
 
-    background-color: #FFFFFFFF;
 }
 .services__description{
     text-align: left;
@@ -62,5 +65,9 @@ img{
 .services__next::before{
     content: url("services/image/expand.svg");
     margin-left: 3%;
+}
+.services__picture{
+
+    width: 100%;
 
 }
