@@ -86,6 +86,9 @@ body{
 .services__description .services__paragraph .services__next{
     display: flex;
 }
+.services__description .services__paragraph .services__next a{
+    text-decoration: none;
+}
 .services__description .services__paragraph .services__next h2{
     font-size: 16px;
     margin-top: 0;
