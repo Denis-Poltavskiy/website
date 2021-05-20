@@ -4,6 +4,7 @@ body{
     width: 100%;
     letter-spacing: 0.2px;
     color: #1B1C21;
+    margin: 0;
 }
 @font-face {
     font-family: "TT Lakes";
@@ -11,26 +12,20 @@ body{
     font-style: normal;
     font-weight: normal;
 }
-
 .header__main-menu{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 24px 16px 24px 16px;
-
+    margin: 18.5px 16px 18.5px 16px;
 }
-
 .services{
     border-top: 1px solid #d9fff5;
     background-color: #f8f8f8;
-    height: 1000px;
-
-
 }
 .services .services__heading::before{
     content:"";
-    margin-right: 2vw;
-    border-width:  1vw;
+    margin-right: 12px;
+    border-width:  4px;
     border-left-style: solid;
     border-left-color: #41F6D7;
     border-top-right-radius: 10px;
@@ -38,7 +33,6 @@ body{
 }
 .services .services__heading{
     font-size: 28px;
-
 }
 .services__slidemenu{
     display: flex;
@@ -50,10 +44,11 @@ body{
     flex-shrink:0;
     flex-wrap: nowrap;
     overflow-x:scroll;
-    margin-left: -32px;
+    padding:0;
+    margin-left:16px ;
 }
 .services__slidemenu li {
-    padding: 8px 9.3px 8px 16.54px;
+    padding: 8px 16.54px 8px 16.54px;
 }
 .services__slidemenu li a{
     text-decoration: none;
@@ -62,8 +57,7 @@ body{
 .services__slidemenu li:first-child{
     display: none;
 }
-.services__slidemenu li:nth-child(2){
-
+.services__slidemenu li:hover{
     border: 0.4vh solid #B8FFEC;
     border-radius: 1vh;
     background-color: #ffff;
@@ -71,28 +65,36 @@ body{
 .services__slidemenu a {
     text-decoration: none;
 }
-
-.services__slidemenu a:hover {
-
-}
-.services__description .services__paragraph {
+.services__description .services__paragraph p{
     color:#1B1C21;
-    text-align: left;
+    text-align: justify;
     padding-left:16px;
-    line-height: 129%;
+    padding-right:16px;
+    line-height: 18px;
     font-size: 14px;
+    margin: 0;
 }
-.services__description .services__paragraph span{
+.services__description .services__paragraph{
+    margin-bottom: 13px;
+}
+.services__description .services__paragraph .services__paragraph_768{
     display: none ;
 }
-.services__description .services__next{
+.services__description .services__paragraph .services__paragraph_1120{
+    display: none ;
+}
+.services__description .services__paragraph .services__next{
     display: flex;
 }
-.services__description .services__next h2{
+.services__description .services__paragraph .services__next h2{
     font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.services__description .services__next img{
+.services__description .services__paragraph .services__next img{
     min-width: 24px;
+    margin-left: 18px;
+    margin-right: 10px;
 }
 .services__picture{
     width: 100%;
@@ -124,37 +126,28 @@ body{
         display:flex;
         justify-content: space-around;
         align-items: center;
-
         order: -1;
-
-    }
-    .header__main-menu_768. .header__main-menu_768_divider{
-
     }
     .header .header__main-menu_768 a{
         margin-right: 16px;
     }
     .services{
+        min-height:500px ;
     }
     .services .services__heading{
         font-size: 28px;
+        margin-bottom: 32px;
     }
     .services .services__heading::before{
-        margin-right: 2vw;
-        border-width:  0.5vw;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+       margin-right: 20px;
     }
     .services__slidemenu{
         font-size: 16px;
+        margin-bottom: 32px;
+        margin-left: 24px;
     }
     .services__slidemenu li {
-        padding: 1% 1% 1% 2%;
-    }
-    .services__slidemenu li:nth-child(2){
-        margin-left: -1%;
-        border: 0.4vh solid #B8FFEC;
-        border-radius: 1vh;
+        padding: 8px 16.54px 8px 16.54px;
     }
     .services__description{
         display: flex;
@@ -165,14 +158,14 @@ body{
         order: 1;
     }
     .services__description .services__paragraph{
-        width: 40%;
-        padding-left:24px;
+        width: 45%;
+        margin-left: 10px;
     }
-    .services__description .services__paragraph span{
+    .services__description .services__paragraph .services__paragraph_768{
         display: block ;
     }
-    .services__description .services__paragraph {
-        font-size: 14px;
+    .services__description .services__next {
+        margin-top: 10px;
     }
     .services__description .services__next h2{
         font-size:16px ;
@@ -181,10 +174,8 @@ body{
         width: 50%;
         margin-right:25px;
         order: 0;
-        border-radius: 20px;
+        border-radius: 5px;
     }
-
-
 }
 @media screen and (min-device-width:1120px) {
     body{
@@ -193,7 +184,6 @@ body{
     .header__main-menu{
         display: block;
         margin-bottom: 0;
-
     }
     .header .header__main-menu .header__main-menu_1120{
         display: flex;
@@ -210,9 +200,9 @@ body{
     }
     .header .header__main-menu_1120 .heading_1120::before{
         content:"";
-        margin-left: -24px;
-        margin-right: 2vw;
-        border-width:  0.5vw;
+        margin-left: -16px;
+        margin-right: 30px;
+        border-width:  3px;
         border-left-style: solid;
         border-left-color: #41F6D7;
         border-top-right-radius: 10px;
@@ -234,13 +224,11 @@ body{
         margin-right: 9px;
         margin-bottom: 5px;
     }
-
     .header__main-menu .header__main-menu_1120 .header__main-menu_1120_checkstatus{
         margin-right: 32px;
     }
     .services{
         padding-right: 20px;
-
         border: none;
     }
     .services .services__heading{
@@ -249,35 +237,36 @@ body{
     .services .services__slidemenu{
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top:1vw;
+        width: 100%;
+        margin-top:8px;
+        margin-left: 32px;
         margin-bottom: 0;
     }
-    .services__slidemenu li:nth-child(2){
-        margin-left: 0;
-        border: 0;
-        border-radius: 0;
-        background-color: #f8f8f8;
-    }
     .services__slidemenu li:nth-child(1){
-        display: inline-flex;
-        margin-left: -20px;
-        border: 0.4vh solid #B8FFEC;
-        border-radius: 1vh;
-        background-color: #ffff;
+        display: block;
     }
     .services__slidemenu li:nth-child(3){
         display:none;
     }
-    .services__slidemenu li:last-child(3){
-
-    }
     .services__slidemenu{
-
         margin-left: 0;
     }
+    .services__description{
+       margin-top: 1%;
+    }
+    .services__description .services__paragraph{
+        width: 45%;
+        margin-left: 18px;
+    }
+    .services__description .services__paragraph .services__paragraph_768{
+        display: none;
+    }
+    .services__description .services__paragraph .services__paragraph_1120{
+        display: block;
+    }
     .services__picture{
+        margin-right: 0.5%;
         border-radius: 5px;
     }
-
 
 }
