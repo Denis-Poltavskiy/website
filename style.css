@@ -1,5 +1,5 @@
 body{
-    font-family: TT Lakes, sans-serif;
+    font-family: TTLakes-Medium, sans-serif;
     font-size: 14px;
     width: 100%;
     letter-spacing: 0.2px;
@@ -8,7 +8,7 @@ body{
 }
 @font-face {
     font-family: "TT Lakes";
-    src: url("fonts/TTLakes.otf") format("truetype");
+    src: url("fonts/TTLakes-Medium.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -108,7 +108,7 @@ body{
 .header .header__main-menu .header__main-menu_1120{
     display: none;
 }
-@media screen and (min-device-width:768px) {
+@media screen and (min-width:768px) {
     .header__main-menu a:nth-child(3) {
         order:-3;
         flex-grow: 1;
@@ -180,7 +180,7 @@ body{
         border-radius: 5px;
     }
 }
-@media screen and (min-device-width:1120px) {
+@media screen and (min-width:1120px) {
     body{
         background-color: #f8f8f8;
     }
