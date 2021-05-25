@@ -54,16 +54,13 @@ body{
     margin-left:16px ;
 }
 .services__slidemenu li {
-    padding: 8px 16.54px 8px 16.54px;
+    padding: 8px 9.3px 8px 16.5px;
 }
 .services__slidemenu li a{
     text-decoration: none;
     color:#7E7E82;
 }
-.services__slidemenu li:first-child{
-    display: none;
-}
-.services__slidemenu li:hover{
+.services__slidemenu_border{
     border: 0.4vh solid #B8FFEC;
     border-radius: 1vh;
     background-color: #ffff;
@@ -152,7 +149,7 @@ body{
         margin-bottom: 32px;
     }
     .services .services__heading::before{
-       margin-right: 20px;
+        margin-right: 20px;
     }
     .services__slidemenu{
         font-size: 16px;
@@ -160,7 +157,7 @@ body{
         margin-left: 24px;
     }
     .services__slidemenu li {
-        padding: 8px 16.54px 8px 16.54px;
+        padding: 8px 9.3px 8px 16.54px;
     }
     .services__description{
         display: flex;
@@ -183,7 +180,7 @@ body{
     .services__description .services__next h2{
         font-size:16px ;
     }
-     .services__picture{
+    .services__picture{
         width: 50%;
         margin-right:25px;
         order: 0;
@@ -227,7 +224,7 @@ body{
     .header .header__main-menu_1120 .heading_1120{
         font-family: TTLakes-ExtraBold, sans-serif;
         font-style: normal;
-        font-size: 26px;
+        font-size: 27px;
         order: -3;
         flex-grow: 10;
         margin-bottom: 0;
@@ -260,7 +257,11 @@ body{
         width: 100%;
         margin-top:8px;
         margin-left: 32px;
+        padding-right: 37px;
         margin-bottom: 0;
+    }
+    .services__slidemenu li {
+        padding: 8px 21.7px 8px 20px;
     }
     .services__slidemenu li:nth-child(1){
         display: block;
@@ -268,12 +269,8 @@ body{
     .services__slidemenu li:nth-child(3){
         display:none;
     }
-    .services .services__slidemenu{
-        margin-left: 35px;
-        padding-right: 37px;
-    }
     .services__description{
-       margin-top: 1%;
+        margin-top: 1%;
     }
     .services__description .services__paragraph{
         width: 45%;
