@@ -1,16 +1,20 @@
 body{
-    font-family: TTLakes-Medium, sans-serif;
+    font-family: TTLakes-Regular, sans-serif;
     font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
     width: 100%;
     letter-spacing: 0.2px;
     color: #1B1C21;
     margin: 0;
 }
 @font-face {
-    font-family: "TT Lakes";
-    src: url("fonts/TTLakes-Medium.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'TTLakes-ExtraBold';
+    src: url("fonts/TTLakes-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'TTLakes-Regular';
+    src: url("fonts/TTLakes-Regular.ttf") format("truetype");
 }
 .header__main-menu{
     display: flex;
@@ -32,7 +36,9 @@ body{
     border-bottom-right-radius: 10px;
 }
 .services .services__heading{
-    font-size: 28px;
+    font-family: TTLakes-ExtraBold, sans-serif;
+    font-style: normal;
+    font-size: 26px;
 }
 .services__slidemenu{
     display: flex;
@@ -109,8 +115,12 @@ body{
     display: none;
 }
 @media screen and (min-width:768px) {
-    .header__main-menu a:nth-child(3) {
+    .header__main-menu_divider {
         order:-3;
+        flex-grow: 1;
+    }
+    .header__main-menu_768_divider {
+        margin-right: 15px;
         flex-grow: 1;
     }
     .header__main-menu a:nth-child(1) {
@@ -138,7 +148,7 @@ body{
         min-height:500px ;
     }
     .services .services__heading{
-        font-size: 28px;
+
         margin-bottom: 32px;
     }
     .services .services__heading::before{
@@ -198,6 +208,9 @@ body{
     .header .header__main-menu>a{
         display: none;
     }
+    .header .header__main-menu_divider{
+        display: none;
+    }
     .header .header__main-menu_768{
         display: none;
     }
@@ -212,8 +225,10 @@ body{
         border-bottom-right-radius: 10px;
     }
     .header .header__main-menu_1120 .heading_1120{
+        font-family: TTLakes-ExtraBold, sans-serif;
+        font-style: normal;
+        font-size: 26px;
         order: -3;
-        font-size: 28px;
         flex-grow: 10;
         margin-bottom: 0;
     }
@@ -221,14 +236,16 @@ body{
         order: -3;
         margin-right: 8px;
         margin-bottom: 5px;
+        font-weight: 600;
     }
     .header .header__main-menu .header__main-menu_1120 .header__main-menu_1120_checkstatus_name{
-        margin-left: -12px;
+        margin-left: 32px;
         margin-right: 9px;
         margin-bottom: 5px;
+        font-weight: 600;
     }
     .header__main-menu .header__main-menu_1120 .header__main-menu_1120_checkstatus{
-        margin-right: 32px;
+        margin-right: 0;
     }
     .services{
         padding-right: 20px;
@@ -251,8 +268,9 @@ body{
     .services__slidemenu li:nth-child(3){
         display:none;
     }
-    .services__slidemenu{
-        margin-left: 0;
+    .services .services__slidemenu{
+        margin-left: 35px;
+        padding-right: 37px;
     }
     .services__description{
        margin-top: 1%;
