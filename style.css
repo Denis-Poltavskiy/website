@@ -60,7 +60,7 @@ body{
     text-decoration: none;
     color:#7E7E82;
 }
-.services__slidemenu_border{
+.slidemenu__item_green-border{
     border: 0.4vh solid #B8FFEC;
     border-radius: 1vh;
     background-color: #ffff;
